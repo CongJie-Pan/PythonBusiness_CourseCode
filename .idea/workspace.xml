@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1df4b79-a1c0-4e72-a107-dc0ec6024bdc" name="Changes" comment="" />
+    <list default="true" id="b1df4b79-a1c0-4e72-a107-dc0ec6024bdc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/222" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +21,12 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2mp5RycOTLe1FxU2JPR0uq7ROZl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,8 +35,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.2024.10.01_Inlcass.executor": "Run",
+    "Python.BMI_GUI_HW.executor": "Run",
+    "Python.greeting_gui_app.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/AboutCoding/PythonBusinessClass",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/AboutCoding/PythonBusiness_CorseCode",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,8 +63,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (pythonBusinessClass)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -90,6 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727760672337</updated>
       <workItem from="1727760673565" duration="8698000" />
+      <workItem from="1728365759352" duration="570000" />
+      <workItem from="1728366341141" duration="7631000" />
     </task>
     <servers />
   </component>
@@ -98,5 +111,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonBusinessClass$2024_10_01_Inlcass.coverage" NAME="2024.10.01_Inlcass Coverage Results" MODIFIED="1727769174186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$greeting_gui_app.coverage" NAME="greeting_gui_app Coverage Results" MODIFIED="1728371622040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/.venv/InclassFile/2024_10_8_InclassFile" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$BMI_GUI_HW.coverage" NAME="BMI_GUI_HW Coverage Results" MODIFIED="1728374203338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/.venv/InclassFile/2024_10_8_InclassFile" />
   </component>
 </project>
