@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b1df4b79-a1c0-4e72-a107-dc0ec6024bdc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/222" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +27,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2mp5RycOTLe1FxU2JPR0uq7ROZl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,11 +37,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.2024.10.01_Inlcass.executor": "Run",
+    "Python.2024_10_15.executor": "Run",
+    "Python.2024_10_15_HW.executor": "Run",
     "Python.BMI_GUI_HW.executor": "Run",
     "Python.greeting_gui_app.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/AboutCoding/PythonBusiness_CorseCode",
+    "last_opened_file_path": "D:/AboutCoding/PythonBusiness_CorseCode/pythonBusinessClass/InclassFile/2024_10_15_Inclass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,6 +108,9 @@
       <workItem from="1727760673565" duration="8698000" />
       <workItem from="1728365759352" duration="570000" />
       <workItem from="1728366341141" duration="7631000" />
+      <workItem from="1728783336893" duration="785000" />
+      <workItem from="1728970624219" duration="2076000" />
+      <workItem from="1728974239759" duration="3823000" />
     </task>
     <servers />
   </component>
@@ -111,7 +119,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonBusinessClass$2024_10_01_Inlcass.coverage" NAME="2024.10.01_Inlcass Coverage Results" MODIFIED="1727769174186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$2024_10_15.coverage" NAME="2024_10_15 Coverage Results" MODIFIED="1728975469297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_15_Inclass" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$greeting_gui_app.coverage" NAME="greeting_gui_app Coverage Results" MODIFIED="1728371622040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/.venv/InclassFile/2024_10_8_InclassFile" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$BMI_GUI_HW.coverage" NAME="BMI_GUI_HW Coverage Results" MODIFIED="1728374203338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/.venv/InclassFile/2024_10_8_InclassFile" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$test.coverage" NAME="test Coverage Results" MODIFIED="1728783472717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$2024_10_15_HW.coverage" NAME="2024_10_15_HW Coverage Results" MODIFIED="1728978280360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_15_Inclass" />
   </component>
 </project>
