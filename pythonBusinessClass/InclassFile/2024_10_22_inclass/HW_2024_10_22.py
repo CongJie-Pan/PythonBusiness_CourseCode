@@ -37,4 +37,6 @@ plt.scatter(data['X'], data['Y'], c=colors[clusters])
 plt.title('Scatter Plot with KMeans Clustering (30 random points)')
 plt.xlabel('X')
 plt.ylabel('Y')
+
 plt.show()
+
