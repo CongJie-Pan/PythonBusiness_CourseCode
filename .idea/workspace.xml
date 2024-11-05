@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b1df4b79-a1c0-4e72-a107-dc0ec6024bdc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_22_inclass/HW_2024_10_22.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_22_inclass/HW_2024_10_22.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_9_24 Inclass/2024.9.24 InClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_9_24 Inclass/2024.9.24 InClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonBusinessClass/Practice_Files/MidtermPractice_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonBusinessClass/Practice_Files/MidtermPractice_2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,11 @@
     "Python.HW_2024_10_22.executor": "Run",
     "Python.MidtermPractice_1.executor": "Run",
     "Python.MidtermPractice_2.executor": "Run",
+    "Python.MidtermPractice_3.executor": "Run",
+    "Python.PythonMidterm_1.executor": "Run",
+    "Python.PythonMidterm_2.executor": "Run",
+    "Python.PythonMidterm_3.executor": "Run",
+    "Python.PythonMidterm_4.executor": "Run",
     "Python.greeting_gui_app.executor": "Run",
     "Python.inclass_2024_10_22.executor": "Run",
     "Python.inclass_2024_10_22_1.executor": "Run",
@@ -53,7 +59,7 @@
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/AboutCoding/PythonBusiness_CorseCode/pythonBusinessClass/InclassFile/2024_10_29_inclass",
+    "last_opened_file_path": "D:/AboutCoding/PythonBusiness_CorseCode",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,8 +72,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\AboutCoding\PythonBusiness_CorseCode\pythonBusinessClass\Practice_Files" />
+      <recent name="D:\AboutCoding\PythonBusiness_CorseCode\pythonBusinessClass\Practice_Files\DataMining" />
       <recent name="D:\AboutCoding\PythonBusiness_CorseCode\pythonBusinessClass\InclassFile\2024_10_22_inclass" />
       <recent name="D:\AboutCoding\PythonBusinessClass" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AboutCoding\PythonBusiness_CorseCode\pythonBusinessClass\Practice_Files\DataMining" />
     </key>
   </component>
   <component name="RunManager">
@@ -131,6 +141,13 @@
       <workItem from="1729592554138" duration="204000" />
       <workItem from="1730176161427" duration="868000" />
       <workItem from="1730177054061" duration="10009000" />
+      <workItem from="1730493837589" duration="61000" />
+      <workItem from="1730493908672" duration="803000" />
+      <workItem from="1730545467707" duration="721000" />
+      <workItem from="1730546204887" duration="764000" />
+      <workItem from="1730723372329" duration="92000" />
+      <workItem from="1730792848377" duration="123000" />
+      <workItem from="1730792983061" duration="890000" />
     </task>
     <servers />
   </component>
@@ -145,12 +162,17 @@
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$HW_2024_10_22.coverage" NAME="HW_2024_10_22 Coverage Results" MODIFIED="1729582558799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_22_inclass" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$BMI_GUI_HW.coverage" NAME="BMI_GUI_HW Coverage Results" MODIFIED="1728374203338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/.venv/InclassFile/2024_10_8_InclassFile" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$inclass_2024_10_22_2.coverage" NAME="inclass_2024_10_22_2 Coverage Results" MODIFIED="1729581849053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_22_inclass" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$PythonMidterm_3.coverage" NAME="PythonMidterm_3 Coverage Results" MODIFIED="1730793383574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/MidtermPractice_and_examFile/Python_MidtermHandsOn_File" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$MidtermPractice_1.coverage" NAME="MidtermPractice_1 Coverage Results" MODIFIED="1730178861944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/Practice_Files" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$PythonMidterm_4.coverage" NAME="PythonMidterm_4 Coverage Results" MODIFIED="1730793780540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/MidtermPractice_and_examFile/Python_MidtermHandsOn_File" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$2024_10_15.coverage" NAME="2024_10_15 Coverage Results" MODIFIED="1728975469297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_15_Inclass" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$inclass_2024_10_22_1.coverage" NAME="inclass_2024_10_22_1 Coverage Results" MODIFIED="1729580328504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_22_inclass" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$MidtermPractice_3.coverage" NAME="MidtermPractice_3 Coverage Results" MODIFIED="1730546362057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/Practice_Files" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$Apriori_Inclass.coverage" NAME="Apriori_Inclass Coverage Results" MODIFIED="1730184914060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_29_inclass" />
-    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$test.coverage" NAME="test Coverage Results" MODIFIED="1728783472717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$PythonMidterm_1.coverage" NAME="PythonMidterm_1 Coverage Results" MODIFIED="1730792996734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/MidtermPractice_and_examFile/Python_MidtermHandsOn_File" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$test.coverage" NAME="test Coverage Results" MODIFIED="1730494402418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$inclass_2024_10_22.coverage" NAME="inclass_2024_10_22 Coverage Results" MODIFIED="1729581824893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_22_inclass" />
+    <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$PythonMidterm_2.coverage" NAME="PythonMidterm_2 Coverage Results" MODIFIED="1730793220971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/MidtermPractice_and_examFile/Python_MidtermHandsOn_File" />
     <SUITE FILE_PATH="coverage/PythonBusiness_CorseCode$2024_10_15_HW.coverage" NAME="2024_10_15_HW Coverage Results" MODIFIED="1728978280360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonBusinessClass/InclassFile/2024_10_15_Inclass" />
   </component>
 </project>

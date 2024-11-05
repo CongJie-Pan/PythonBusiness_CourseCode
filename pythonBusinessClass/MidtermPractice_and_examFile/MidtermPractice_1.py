@@ -38,6 +38,10 @@ def show_BMI_Result():
             infoShow_label.config(text=f"Your BMI is {BMI_Value}. You are in Obesity.")
     except ValueError:
         messagebox.showerror("Input Error", "Please enter valid numbers")
+        
+'''
+===== GUI Setting ====
+'''
 
 # Create the main window
 window = tk.Tk()

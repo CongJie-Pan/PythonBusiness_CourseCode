@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        .code-block {
+            position: relative;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+        .output {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python 基礎語法教學</h1>
+        
+        <table>
+            <tr>
+                <th>功能</th>
+                <th>說明與程式碼</th>
+                <th>輸出結果</th>
+            </tr>
+            
+            <!-- 1. 偶數判斷 -->
+            <tr>
+                <td>偶數判斷</td>
+                <td>
+                    <div class="code-block">
+                        <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        <pre>def findEvens(numList):
+    for num in numList:
+        if num%2 == 0:
+            print(num)
+
+numList = [10, 20, 33, 46, 55]
+print("Finding Even Numbers: " )
+findEvens(numList)</pre>
+                    </div>
+                    <p>使用 if 條件判斷和取餘數運算符 % 來找出列表中的偶數</p>
+                </td>
+                <td>
+                    <div class="output">
+                        Finding Even Numbers:
+                        10
+                        20
+                        46
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- 2. 巢狀迴圈 -->
+            <tr>
+                <td>巢狀迴圈</td>
+                <td>
+                    <div class="code-block">
+                        <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        <pre>for i in range(5, 0, -1):
+    for j in range(i):
+        print(i,end=" ")
+    print()</pre>
+                    </div>
+                    <p>使用巢狀 for 迴圈和 range() 函數來創建數字圖案</p>
+                </td>
+                <td>
+                    <div class="output">
+                        5 5 5 5 5
+                        4 4 4 4
+                        3 3 3
+                        2 2
+                        1
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- 3. 質數判斷 -->
+            <tr>
+                <td>質數判斷</td>
+                <td>
+                    <div class="code-block">
+                        <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        <pre>def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5)+1):
+        if num % i == 0:
+            return False
+    return True
+
+try:
+    user_input = int(input("Enter a number: "))
+    if is_prime(user_input):
+        print(f"{user_input} is a prime number")
+    else:
+        print(f"{user_input} is not a prime number")
+except ValueError:
+    print("The invalid input , please enter again")</pre>
+                    </div>
+                    <p>使用函數、例外處理和數學運算來判斷質數</p>
+                </td>
+                <td>
+                    <div class="output">
+                        Enter a number: 17
+                        17 is a prime number
+                        
+                        Enter a number: 4
+                        4 is not a prime number
+                        
+                        Enter a number: abc
+                        The invalid input , please enter again
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- 4. 檔案處理 -->
+            <tr>
+                <td>檔案處理</td>
+                <td>
+                    <div class="code-block">
+                        <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        <pre>def read_names_from_file(file_name):
+    with open(file_name, "r") as file:
+        return file.read().splitlines()
+
+def count_girls_names(names, girl_names):
+    matched_names = [name for name in names 
+                    if name in girl_names]
+    return matched_names
+
+names = read_names_from_file('names.txt')
+girl_names = read_names_from_file('GirlNames.txt')
+
+matched_names = count_girls_names(names, girl_names)
+
+print(f"Number of matching girl names: {len(matched_names)}")
+print("The matching girl names are:")
+for i, name in enumerate(matched_names, start=1):
+    print(f"({i}) {name}")</pre>
+                    </div>
+                    <p>使用檔案操作、列表解析和字串格式化來處理文件數據</p>
+                </td>
+                <td>
+                    <div class="output">
+                        Number of matching girl names: 3
+                        The matching girl names are:
+                        (1) Emma
+                        (2) Olivia
+                        (3) Sophia
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function copyCode(button) {
+            const codeBlock = button.nextElementSibling;
+            const textArea = document.createElement('textarea');
+            textArea.value = codeBlock.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            
+            button.textContent = '已複製！';
+            setTimeout(() => {
+                button.textContent = '複製';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

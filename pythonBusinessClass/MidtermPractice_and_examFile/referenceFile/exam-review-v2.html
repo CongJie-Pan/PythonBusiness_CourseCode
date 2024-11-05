@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python 考試複習指南</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+            color: #2c3e50;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #e1e8ed;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafd;
+        }
+        .code-block {
+            position: relative;
+            background-color: #282a36;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        .code-content {
+            font-family: 'Fira Code', monospace;
+            white-space: pre;
+            color: #f8f8f2;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background-color: #44475a;
+            color: #f8f8f2;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .copy-btn:hover {
+            background-color: #6272a4;
+        }
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            display: none;
+            animation: fadeOut 2s forwards;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            70% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .lib-section {
+            margin-bottom: 40px;
+        }
+        .keyword {
+            color: #ff79c6;
+        }
+        .string {
+            color: #f1fa8c;
+        }
+        .comment {
+            color: #6272a4;
+        }
+        .function {
+            color: #50fa7b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python 考試複習指南</h1>
+
+        <!-- 必要的Python庫 -->
+        <div class="section">
+            <h2>1. 必要的Python庫</h2>
+            <table>
+                <tr>
+                    <th>庫名稱</th>
+                    <th>主要用途</th>
+                    <th>導入語法</th>
+                    <th>常用函數/方法</th>
+                </tr>
+                <tr>
+                    <td>tkinter</td>
+                    <td>GUI開發</td>
+                    <td>
+                        <div class="code-block">
+                            <div class="code-content">import tkinter as tk
+from tkinter import messagebox</div>
+                            <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Tk(): 創建主窗口</li>
+                            <li>Label(): 文字標籤</li>
+                            <li>Entry(): 輸入框</li>
+                            <li>Button(): 按鈕</li>
+                            <li>messagebox.showerror(): 錯誤提示</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>numpy</td>
+                    <td>數值計算</td>
+                    <td>
+                        <div class="code-block">
+                            <div class="code-content">import numpy as np</div>
+                            <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>random.rand(): 生成隨機數</li>
+                            <li>array(): 創建數組</li>
+                            <li>reshape(): 重塑數組</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>pandas</td>
+                    <td>數據處理</td>
+                    <td>
+                        <div class="code-block">
+                            <div class="code-content">import pandas as pd</div>
+                            <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>DataFrame(): 創建數據框</li>
+                            <li>read_csv(): 讀取CSV文件</li>
+                            <li>concat(): 合併數據</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>matplotlib</td>
+                    <td>數據可視化</td>
+                    <td>
+                        <div class="code-block">
+                            <div class="code-content">import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg</div>
+                            <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>plot(): 繪製線圖</li>
+                            <li>scatter(): 繪製散點圖</li>
+                            <li>title(): 設置標題</li>
+                            <li>xlabel()/ylabel(): 設置軸標籤</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>sklearn</td>
+                    <td>機器學習</td>
+                    <td>
+                        <div class="code-block">
+                            <div class="code-content">from sklearn.cluster import KMeans</div>
+                            <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>fit(): 訓練模型</li>
+                            <li>predict(): 預測</li>
+                            <li>fit_predict(): 訓練並預測</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 練習題目整理 -->
+        <div class="section">
+            <h2>2. 練習題目整理</h2>
+            <h3>BMI計算器 (MidtermPractice_1.py)</h3>
+            <div class="code-block">
+                <div class="code-content"># 主要功能
+def calculate_bmi():
+    try:
+        weight = float(entry_weight.get())
+        height = float(entry_height.get()) / 100  # 轉換為米
+        bmi = weight / (height ** 2)
+        return round(bmi, 2)
+    except ValueError:
+        messagebox.showerror("錯誤", "請輸入有效的數字")</div>
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+            </div>
+
+            <h3>K-Means聚類 (MidtermPractice_2.py)</h3>
+            <div class="code-block">
+                <div class="code-content"># 生成隨機數據
+random_data = {
+    'X': np.random.rand(30) * 50,
+    'Y': np.random.rand(30) * 50
+}
+data = pd.DataFrame(random_data)
+
+# K-Means聚類
+kmeans = KMeans(n_clusters=4)
+clusters = kmeans.fit_predict(data)
+
+# 繪製散點圖
+plt.scatter(data['X'], data['Y'], c=colors[clusters])
+plt.title('K-Means Clustering')
+plt.show()</div>
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+            </div>
+
+            <h3>文件處理 (MidtermPractice_3.py)</h3>
+            <div class="code-block">
+                <div class="code-content"># 讀取文件
+def read_names_from_file(file_name):
+    with open(file_name, "r") as file:
+        return file.read().splitlines()
+
+# 比對名字
+def find_matching_names(list1, list2):
+    return [name for name in list1 if name in list2]</div>
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+            </div>
+        </div>
+
+        <!-- 重要語法和函數 -->
+        <div class="section">
+            <h2>3. 重要語法和函數</h2>
+            
+            <h3>GUI基礎結構</h3>
+            <div class="code-block">
+                <div class="code-content"># 創建主窗口
+window = tk.Tk()
+window.title("應用程式")
+window.geometry("400x300")
+
+# 添加控件
+label = tk.Label(window, text="文字")
+entry = tk.Entry(window)
+button = tk.Button(window, text="確定", command=callback_function)
+
+# 布局
+label.pack()  # 或使用 .place(x=0, y=0) 或 .grid(row=0, column=0)
+
+window.mainloop()</div>
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+            </div>
+
+            <h3>錯誤處理</h3>
+            <div class="code-block">
+                <div class="code-content">try:
+    # 可能產生錯誤的程式碼
+    value = float(entry.get())
+    result = calculate(value)
+except ValueError:
+    messagebox.showerror("錯誤", "請輸入有效的數字")
+except Exception as e:
+    messagebox.showerror("錯誤", f"發生錯誤: {str(e)}")</div>
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+            </div>
+
+            <h3>資料視覺化</h3>
+            <div class="code-block">
+                <div class="code-content"># 在Tkinter中嵌入Matplotlib圖表
+fig, ax = plt.subplots()
+scatter = ax.scatter(data['X'], data['Y'], c=colors)
+canvas = FigureCanvasTkAgg(fig, master=window)
+canvas.draw()
+canvas.get_tk_widget().pack()</div>
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="copyToast">已複製到剪貼板！</div>
+
+    <script>
+        function copyCode(button) {
+            const codeBlock = button.previousElementSibling;
+            const code = codeBlock.textContent;
+            
+            navigator.clipboard.writeText(code).then(() => {
+                const toast = document.getElementById('copyToast');
+                toast.style.display = 'block';
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

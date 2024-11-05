@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        .code-block {
+            position: relative;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+        .output {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+            margin: 10px 0;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python 進階語法教學</h1>
+
+        <!-- Lists 列表 -->
+        <div class="section">
+            <h2>1. Lists (列表)</h2>
+            <p>List 是 Python 最基本且常用的數據結構，可以存儲不同類型的元素。</p>
+            
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                <pre>
+# 創建列表
+numbers = [1, 2, 3, 4, 5]
+mixed = [1, "Hello", 3.14, True]
+
+# 基本操作
+numbers.append(6)        # 添加元素
+numbers.insert(0, 0)    # 插入元素
+numbers.pop()           # 移除最後一個元素
+numbers.remove(3)       # 移除特定元素
+length = len(numbers)   # 獲取長度
+
+# 切片操作
+first_three = numbers[0:3]  # 獲取前三個元素
+reversed_list = numbers[::-1]  # 反轉列表
+
+# 列表推導式
+squares = [x**2 for x in range(5)]  # 創建平方數列表
+
+print("Original:", numbers)
+print("Squares:", squares)
+print("Reversed:", reversed_list)</pre>
+            </div>
+            <div class="output">
+                Original: [0, 1, 2, 4, 5]
+                Squares: [0, 1, 4, 9, 16]
+                Reversed: [5, 4, 2, 1, 0]
+            </div>
+        </div>
+
+        <!-- Tuples 元組 -->
+        <div class="section">
+            <h2>2. Tuples (元組)</h2>
+            <p>Tuple 是不可變的序列類型，一旦創建就不能修改。</p>
+            
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                <pre>
+# 創建元組
+coordinates = (10, 20)
+person = ("John", 25, "New York")
+
+# 解包元組
+name, age, city = person
+
+# 元組運算
+combined = coordinates + (30,)  # 創建新元組
+repeated = coordinates * 2      # 重複元組
+
+print("Person info:", person)
+print("Name:", name)
+print("Combined:", combined)
+print("Repeated:", repeated)</pre>
+            </div>
+            <div class="output">
+                Person info: ('John', 25, 'New York')
+                Name: John
+                Combined: (10, 20, 30)
+                Repeated: (10, 20, 10, 20)
+            </div>
+        </div>
+
+        <!-- Dictionaries 字典 -->
+        <div class="section">
+            <h2>3. Dictionaries (字典)</h2>
+            <p>Dictionary 是鍵值對的集合，提供快速的查找功能。</p>
+            
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                <pre>
+# 創建字典
+student = {
+    "name": "Alice",
+    "age": 20,
+    "grades": [85, 90, 92]
+}
+
+# 基本操作
+student["email"] = "alice@example.com"  # 添加新鍵值對
+grade_avg = sum(student["grades"]) / len(student["grades"])
+
+# 字典方法
+keys = student.keys()       # 獲取所有鍵
+values = student.values()   # 獲取所有值
+items = student.items()     # 獲取所有鍵值對
+
+# 字典推導式
+squared_numbers = {x: x**2 for x in range(5)}
+
+print("Student:", student)
+print("Grade Average:", grade_avg)
+print("Squared Numbers:", squared_numbers)</pre>
+            </div>
+            <div class="output">
+                Student: {'name': 'Alice', 'age': 20, 'grades': [85, 90, 92], 'email': 'alice@example.com'}
+                Grade Average: 89.0
+                Squared Numbers: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+            </div>
+        </div>
+
+        <!-- Sets 集合 -->
+        <div class="section">
+            <h2>4. Sets (集合)</h2>
+            <p>Set 是無序的不重複元素集合，支持數學運算。</p>
+            
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                <pre>
+# 創建集合
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+# 集合運算
+union = set1 | set2          # 聯集
+intersection = set1 & set2   # 交集
+difference = set1 - set2     # 差集
+symmetric_diff = set1 ^ set2 # 對稱差集
+
+# 集合方法
+set1.add(6)       # 添加元素
+set1.remove(1)    # 移除元素
+is_subset = {4, 5}.issubset(set1)  # 子集檢查
+
+print("Union:", union)
+print("Intersection:", intersection)
+print("Difference:", difference)
+print("Symmetric Difference:", symmetric_diff)</pre>
+            </div>
+            <div class="output">
+                Union: {1, 2, 3, 4, 5, 6, 7, 8}
+                Intersection: {4, 5}
+                Difference: {1, 2, 3}
+                Symmetric Difference: {1, 2, 3, 6, 7, 8}
+            </div>
+        </div>
+
+        <!-- Arrays -->
+        <div class="section">
+            <h2>5. Arrays (數組)</h2>
+            <p>Python 的 array 模組提供了同質數組的實現，numpy 提供了更強大的數組操作。</p>
+            
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                <pre>
+import array
+import numpy as np
+
+# 標準 Python array
+int_array = array.array('i', [1, 2, 3, 4, 5])
+
+# NumPy array
+np_array = np.array([1, 2, 3, 4, 5])
+matrix = np.array([[1, 2, 3], [4, 5, 6]])
+
+# NumPy 操作
+squared = np_array ** 2
+mean = np_array.mean()
+sum_val = np_array.sum()
+
+print("Standard Array:", int_array)
+print("NumPy Array:", np_array)
+print("Matrix:\n", matrix)
+print("Squared:", squared)
+print("Mean:", mean)</pre>
+            </div>
+            <div class="output">
+                Standard Array: array('i', [1, 2, 3, 4, 5])
+                NumPy Array: [1 2 3 4 5]
+                Matrix:
+                [[1 2 3]
+                 [4 5 6]]
+                Squared: [ 1  4  9 16 25]
+                Mean: 3.0
+            </div>
+        </div>
+
+        <!-- 進階操作 -->
+        <div class="section">
+            <h2>6. 進階操作技巧</h2>
+            
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)">複製</button>
+                <pre>
+# 列表/集合/字典推導式
+even_squares = [x**2 for x in range(10) if x % 2 == 0]
+even_set = {x for x in range(10) if x % 2 == 0}
+num_dict = {x: x**2 for x in range(5)}
+
+# zip 函數使用
+names = ["Alice", "Bob", "Charlie"]
+ages = [24, 25, 26]
+people = list(zip(names, ages))
+
+# 解包操作
+first, *rest = [1, 2, 3, 4, 5]
+
+# 切片高級用法
+numbers = list(range(10))
+every_second = numbers[::2]
+reversed_nums = numbers[::-1]
+
+print("Even Squares:", even_squares)
+print("People:", people)
+print("Rest:", rest)
+print("Every Second:", every_second)</pre>
+            </div>
+            <div class="output">
+                Even Squares: [0, 4, 16, 36, 64]
+                People: [('Alice', 24), ('Bob', 25), ('Charlie', 26)]
+                Rest: [2, 3, 4, 5]
+                Every Second: [0, 2, 4, 6, 8]
+            </div>
+            
+            <div class="note">
+                <strong>注意：</strong>
+                <ul>
+                    <li>列表是可變的，而元組是不可變的</li>
+                    <li>字典的鍵必須是不可變類型（字符串、數字、元組等）</li>
+                    <li>集合中的元素必須是不可變的</li>
+                    <li>NumPy 數組比標準 Python 列表在數值計算上更高效</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(button) {
+            const codeBlock = button.nextElementSibling;
+            const textArea = document.createElement('textarea');
+            textArea.value = codeBlock.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            
+            button.textContent = '已複製！';
+            setTimeout(() => {
+                button.textContent = '複製';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

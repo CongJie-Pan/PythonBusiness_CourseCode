@@ -1,0 +1,1 @@
+先開啟anaconda navigator，再來透過裡面的介面執行 spyder 這樣編譯器比較沒問題，編譯器可以和anaconda的同步。
