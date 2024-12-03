@@ -1,0 +1,3 @@
+2024-12-03 15:31:15,315 - ERROR - Failed to load file: File not found: budget_data.csv
+2024-12-03 15:31:15,316 - ERROR - Error loading data: File not found: budget_data.csv
+2024-12-03 15:31:15,316 - ERROR - Analysis failed: File not found: budget_data.csv
